@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="form-inline" style="text-align:center;">
+        <div class="form-group">
+            <input placeholder="Search Github Name" id="search-text" class="form-control" />
+        </div>
+        <span class="btn btn-primary" id="search">Search</span>
+    </div>
+
+<div class="clearfix"></div>
+<br />
+<h3 class="name-header" style="display:none">Name: <span class="name" style="font-weight: bold;"></span>&nbsp; location: <span class="location" style="font-weight: bold;"></span>&nbsp; followers: <span class="followers" style="font-weight: bold;"></span></h3>
+<br />
+<table class="table table-bordered table-condensed table-hover table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th class="sort-btn stargazers-btn" data-btn-type="stargazers" style="width:75px;" data-sort="ASC">Stars <i class="glyphicon glyphicon-sort-by-attributes-alt pull-right" style="display:none;"></i></th>
+            <th class="sort-btn watchers-btn" data-btn-type="watchers" style="width:115px;"  data-sort="ASC">Watchers <i class="glyphicon glyphicon-sort-by-attributes-alt pull-right" style="display:none;"></i></th>
+        </tr>
+    </thead>
+</table>
+</div>
+
+@section scripts
+{
+<script src="/Scripts/github.js"></script>
+}
